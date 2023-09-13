@@ -1,31 +1,29 @@
 {
   "name": "reusable-component-library",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArtemMalafeev/reusable-component-library.git"
-  },
-  "author": "",
+  "description": "Личный проект 'Reusable components' от learnJS",
+  "author": "Artem Malafeev",
+  "type": "module",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ArtemMalafeev/reusable-component-library/issues"
-  },
-  "homepage": "https://github.com/ArtemMalafeev/reusable-component-library#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-include": "^2.4.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^4.0.1",
     "postcss": "^8.4.29",
-    "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.1",
-    "postcss-scss": "^4.0.8",
-    "precss": "^4.0.0",
-    "sass": "^1.66.1"
-  },
-  "dependencies": {
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "sass": "^1.66.1",
+    "stylelint": "^15.10.3",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.1.0"
   }
 }
