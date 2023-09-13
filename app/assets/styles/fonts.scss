@@ -8,7 +8,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('assets/fonts/Roboto-Regular.ttf');
+    src: url('../assets/fonts/Roboto-Regular.woff2');
 }
 
 @font-face {
@@ -16,7 +16,7 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: url('assets/fonts/Roboto-Medium.ttf');
+    src: url('../assets/fonts/Roboto-Medium.woff2');
 }
 
 /* Inter */
@@ -26,7 +26,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('assets/fonts/Inter-Regular.ttf');
+    src: url('../assets/fonts/Inter-Regular.woff2');
 }
 
 @font-face {
@@ -34,5 +34,5 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: url('assets/fonts/Inter-Medium.ttf');
+    src: url('../assets/fonts/Inter-Medium.woff2');
 }

@@ -1,0 +1,57 @@
+/* ACCORDION */
+
+
+/* Base */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.accordion__item {
+    padding: 24px 32px;
+
+    font-family: $main-font;
+    line-height: 24px;
+    color: $grey-4;
+
+    border: 1px solid $grey-3;
+    border-radius: 8px;
+}
+
+.accordion__summary {
+    cursor: pointer;
+
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion__title {
+    color: $black;
+}
+
+.accordion__logo {
+    display: block;
+    flex-shrink: 0;
+
+    width: 18px;
+    height: 10px;
+
+    transition: transform .5s ease;
+}
+
+.accordion__text {
+    margin: 0;
+}
+
+.accordion__item[open] .accordion__logo {
+    transform: rotate(180deg);
+}
+
+.accordion__content {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}

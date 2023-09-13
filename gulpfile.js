@@ -12,6 +12,13 @@ import ttf2woff2 from 'gulp-ttf2woff2';
 
 const sass = gulpSass(dartSass);
 
+/* Icons */
+
+export const icons = () => {
+    return gulp.src('app/assets/images/**/*.*')
+        .pipe(gulp.dest('public/assets/images'));
+};
+
 /* Fonts */
 
 export const fonts = () => {
@@ -75,6 +82,7 @@ export default gulp.series(
     gulp.parallel(
         styles,
         html,
+        icons,
         fonts,
         watching,
     ),
