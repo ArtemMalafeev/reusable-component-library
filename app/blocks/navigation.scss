@@ -50,6 +50,7 @@
 
 .navigation__menu {
     position: fixed;
+    z-index: 100;
     top: $header-height;
     bottom: 0;
     left: -100%;
@@ -71,7 +72,6 @@
     @media screen and (min-width: $tablet-width) {
         position: static;
         width: initial;
-        background-color: $background-color-main;
     }
 }
 
@@ -90,6 +90,7 @@
     @media screen and (min-width: $tablet-width) {
         max-width: initial;
         padding: 0;
+        background-color: $background-color-second;
     }
 }
 

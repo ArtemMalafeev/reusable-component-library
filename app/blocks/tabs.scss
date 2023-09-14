@@ -1,0 +1,123 @@
+/* Tabs */
+
+.tabs {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    height: 100%;
+}
+
+/* Radio */
+
+.tabs__radio {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Menu */
+
+.tabs__menu {
+    overflow: hidden;
+}
+
+/* Inner */
+
+.tabs__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    text-align: center;
+}
+
+/* Items */
+
+.tabs__items {
+    overflow-x: scroll;
+    display: flex;
+    column-gap: 40px;
+}
+
+/* Label */
+
+.tabs__label {
+    cursor: pointer;
+
+    position: relative;
+
+    display: block;
+
+    padding-bottom: 4px;
+
+    color: $text-color;
+    white-space: nowrap;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+
+        width: 100%;
+        height: 5px;
+
+        background-color: $text-color-active;
+
+        transition: .5s all;
+    }
+
+    &:hover {
+        color: $text-color-hover;
+    }
+}
+
+/* Content */
+
+.tabs__content {
+    display: none;
+
+    height: 100%;
+    padding-block: 20px;
+
+    background-color: $background-color-main;
+    border-top: 1px solid $grey-2;
+    border-bottom: 1px solid $grey-2;
+}
+
+.tabs__items::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.tabs__radio--html~.tabs__menu .tabs__label--html,
+.tabs__radio--css~.tabs__menu .tabs__label--css {
+    text-transform: uppercase;
+}
+
+.tabs__radio--all:checked~.tabs__content--all,
+.tabs__radio--atoms:checked~.tabs__content--toms,
+.tabs__radio--molecules:checked~.tabs__content--molecules,
+.tabs__radio--organisms:checked~.tabs__content--organisms,
+.tabs__radio--html:checked~.tabs__content--html,
+.tabs__radio--css:checked~.tabs__content--css {
+    display: block;
+}
+
+.tabs__radio--all:checked~.tabs__menu .tabs__label--all,
+.tabs__radio--atoms:checked~.tabs__menu .tabs__label--atoms,
+.tabs__radio--molecules:checked~.tabs__menu .tabs__label--molecules,
+.tabs__radio--organisms:checked~.tabs__menu .tabs__label--organisms,
+.tabs__radio--html:checked~.tabs__menu .tabs__label--html,
+.tabs__radio--css:checked~.tabs__menu .tabs__label--css {
+    color: $text-color-active;
+}
+
+.tabs__radio--all:checked~.tabs__menu .tabs__label--all::after,
+.tabs__radio--atoms:checked~.tabs__menu .tabs__label--atoms::after,
+.tabs__radio--molecules:checked~.tabs__menu .tabs__label--molecules::after,
+.tabs__radio--organisms:checked~.tabs__menu .tabs__label--organisms::after,
+.tabs__radio--html:checked~.tabs__menu .tabs__label--html::after,
+.tabs__radio--css:checked~.tabs__menu .tabs__label--css::after,
+.tabs__label:hover::after {
+    transform: scaleX(1);
+}

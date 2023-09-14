@@ -8,7 +8,7 @@
     <title>Reusable components</title>
 </head>
 
-<body class="page preload">
+<body class="page">
     <header class="header">
         <nav class="navigation container">
             <a class="navigation__logo" href="index.html">
@@ -137,7 +137,210 @@
     </header>
 
     <main class="page__main">
-        a
+        <section class="preview">
+            <div class="container">
+                <h1 class="preview__title">Reusable component library</h1>
+            </div>
+            <div class="tabs" role="tab">
+                <input class="tabs__radio tabs__radio--all" type="radio" id="all-tab" name="tab" checked>
+                <input class="tabs__radio tabs__radio--atoms" type="radio" id="atoms-tab" name="tab">
+                <input class="tabs__radio tabs__radio--molecules" type="radio" id="molecules-tab" name="tab">
+                <input class="tabs__radio tabs__radio--organisms" type="radio" id="organisms-tab" name="tab">
+                <div class="tabs__menu">
+                    <div class="container">
+                        <ul class="tabs__items">
+                            <li class="tabs__item">
+                                <label class="tabs__label tabs__label--all" for="all-tab">All components</label>
+                            </li>
+                            <li class="tabs__item">
+                                <label class="tabs__label tabs__label--atoms" for="atoms-tab">Atoms</label>
+                            </li>
+                            <li class="tabs__item">
+                                <label class="tabs__label tabs__label--molecules" for="molecules-tab">Molecules</label>
+                            </li>
+                            <li class="tabs__item">
+                                <label class="tabs__label tabs__label--organisms" for="organisms-tab">Organisms</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__content tabs__content--all">
+                    <div class="container">
+                        <div class="tabs__inner">
+                            <div class="tabs__cards cards">
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="histogram">
+                                            <div class="histogram__header">
+                                                <div class="histogram__information">
+                                                    <h2 class="histogram__title">Total orders</h2>
+                                                    <span class="histogram__total">50254</span>
+                                                </div>
+                                                <a class="histogram__link" href="#" tabindex="-1">View all</a>
+                                            </div>
+                                            <div class="histogram__chart">
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--m"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--l"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--m"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--l"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--l"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--m"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--l"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column histogram__column--m"></div>
+                                                <div class="histogram__column"></div>
+                                                <div class="histogram__column histogram__column--l"></div>
+                                                <div class="histogram__column histogram__column--s"></div>
+                                                <div class="histogram__column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Histogram</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="skeleton">
+                                            <div class="skeleton__top">
+                                                <div class="skeleton__logo">
+                                                </div>
+                                                <div class="skeleton__description">
+                                                    <div class="skeleton__line skeleton__line--s"></div>
+                                                    <div class="skeleton__line skeleton__line--m"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skeleton__bottom">
+                                                <div class="skeleton__line"></div>
+                                                <div class="skeleton__line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Skeleton</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <label class="toggler">
+                                                <input class="toggler__input" type="checkbox" tabindex="-1">
+                                                <span class="toggler__control">Off</span>
+                                            </label>
+                                            <label class="toggler">
+                                                <input class="toggler__input" type="checkbox" tabindex="-1" checked>
+                                                <span class="toggler__control">On</span>
+                                            </label>
+                                            <label class="toggler">
+                                                <input class="toggler__input" type="checkbox" tabindex="-1" disabled>
+                                                <span class="toggler__control">Disabled</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Toggler</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <details class="accordion__item" tabindex="-1">
+                                                <summary class="accordion__summary">
+                                                    <span class="accotdion__title">Accordion item 1</span>
+                                                    <svg class="accordion__logo" viewBox="0 0 18 10">
+                                                        <use xlink:href="assets/images/icons.svg#arrow"></use>
+                                                    </svg>
+                                                </summary>
+                                                <div class="accordion__content">
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                                        amet
+                                                        sint. Velit officia consequat
+                                                        duis
+                                                        enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                                        amet.
+                                                    </p>
+                                                </div>
+                                            </details>
+                                            <details class="accordion__item" tabindex="-1">
+                                                <summary class="accordion__summary">
+                                                    <span class="accotdion__title">Accordion item 2</span>
+                                                    <svg class="accordion__logo" viewBox="0 0 18 10">
+                                                        <use xlink:href="assets/images/icons.svg#arrow"></use>
+                                                    </svg>
+                                                </summary>
+                                                <div class="accordion__content">
+                                                    <p class="accordion__text">
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Ducimus
+                                                        sit magni quae hic natus cumque
+                                                        incidunt quisquam ad ea fugit voluptas assumenda maxime, earum
+                                                        iusto
+                                                        veniam labore facere nesciunt
+                                                        dolorem.
+                                                    </p>
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Accordion</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <button class="button button--primary" type="button" tabindex="-1">
+                                                Primary
+                                            </button>
+                                            <button class="button button--primary" type="button" tabindex="-1" disabled>
+                                                Primary
+                                            </button>
+                                            <button class="button button--secondary" type="button" tabindex="-1">
+                                                Secondary
+                                            </button>
+                                            <button class="button button--secondary" type="button" tabindex="-1" disabled>
+                                                Secondary
+                                            </button>
+                                            <button class="button button--alternate" type="button" tabindex="-1">
+                                                Alternate
+                                            </button>
+                                            <button class="button button--alternate" type="button" tabindex="-1" disabled>
+                                                Alternate
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Button</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
     <footer class="page__footer footer">
