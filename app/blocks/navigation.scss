@@ -1,0 +1,163 @@
+/* Navigation */
+
+.navigation {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: $header-height;
+
+    @media screen and (min-width: $tablet-width) {
+        justify-content: space-between;
+    }
+}
+
+/* Logo */
+
+.navigation__logo {
+    line-height: 0;
+}
+
+/* Toggle */
+
+.navigation__toggle {
+    @include reset-button;
+
+    cursor: pointer;
+
+    position: absolute;
+    left: 16px;
+
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: $tablet-width) {
+        display: block;
+    }
+}
+
+/* Burger */
+
+.navigation__burger {
+    fill: $grey-4;
+}
+
+/* Menu */
+
+.navigation__menu {
+    position: fixed;
+    top: $header-height;
+    bottom: 0;
+    left: -100%;
+
+    overflow-y: scroll;
+
+    width: 100%;
+
+    background-color: rgba($color: $black, $alpha: 20%);
+
+    transition: left .5s ease-in-out;
+
+    &--show {
+        left: 0;
+        transition: left .5s ease-in-out;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+        position: static;
+        width: initial;
+        background-color: $background-color-main;
+    }
+}
+
+/* Inner */
+
+.navigation__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    max-width: 375px;
+    padding: 16px;
+
+    background-color: $background-color-main;
+
+    @media screen and (min-width: $tablet-width) {
+        max-width: initial;
+        padding: 0;
+    }
+}
+
+/* Top */
+
+.navigation__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet-width) {
+        column-gap: 56px;
+    }
+}
+
+/* List */
+
+.navigation__list {  
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media screen and (min-width: $tablet-width) {
+        flex-direction: row;
+        column-gap: 24px;
+    }
+}
+
+/* Link */
+
+.navigation__link {
+    @include link;
+}
+
+/* Swither */
+
+.navigation__switcher {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+/* Swithcer Icon */
+
+.navigation__switcher-icon {
+    fill: $grey-3;
+}
+
+/* Switcher Light Active */
+
+.navigation__switcher-light--active {
+    fill: $grey-4;
+}
+
+/* Switcher Dark Active */
+
+.navigation__switcher-dark--active {
+    fill: $white;
+}
+
+/* Aside */
+
+.navigation__aside {
+    @media screen and (min-width: $tablet-width) {
+        display: none;
+    }
+}

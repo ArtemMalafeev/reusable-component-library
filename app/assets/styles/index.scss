@@ -3,12 +3,22 @@
 
 /* Base */
 
-@import 'normalize';
+// @import 'normalize';
 @import 'fonts';
 @import 'variables';
+@import 'mixins';
 
 /* Components */
 
 @import '../../components/index';
 
 /* Blocks */
+
+@import '../../blocks/index';
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}

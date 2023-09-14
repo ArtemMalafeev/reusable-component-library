@@ -1,0 +1,57 @@
+/* Aside */
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    color: $black;
+}
+
+/* Category */
+
+.aside__category {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid $grey-3;
+}
+
+/* Title */
+
+.aside__title {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $grey-3;
+}
+
+/* List */
+
+.aside__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+/* Items */
+
+.aside__item {
+    border: 0;
+    outline: 0;
+}
+
+/* Link */
+
+.aside__link {
+    @include link;
+}

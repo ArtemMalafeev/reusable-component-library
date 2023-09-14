@@ -1,3 +1,9 @@
+/* Widths */
+
+$phone-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1110px;
+
 /* Fonts */
 
 $main-font: 'Inter', sans-serif;
@@ -18,13 +24,33 @@ $eggplant: hsl(214deg 37% 32%);
 $blue: hsl(228deg 81% 59%);
 $dark-blue: hsl(228deg 69% 45%);
 $red: hsl(360deg 86% 59%);
-$grey-1: hsl(210deg 17% 98%);
-$grey-2: hsl(203deg 13% 88%);
+$grey-1: #f9fafb;
+$grey-2: #dce1e4;
 $grey-3: hsl(208deg 11% 71%);
 $grey-4: hsl(210deg 9% 31%);
-$grey-5: hsl(220deg 33% 98%);
+$grey-5: #f8f9fc;
 $error: $red;
 $success: $blue;
 $primary: $blue;
 $secondary: $purple;
 $shadow: $black;
+$active: $red;
+
+/* Background */
+
+$background-color-main: $grey-1;
+$background-color-second: $white;
+
+/* Text */
+
+$text-color: $grey-3;
+$text-color-hover: $black;
+$text-color-active: $black;
+
+/* Logo */
+
+$logo-color: $black;
+
+/* Others */
+
+$header-height: 4rem;

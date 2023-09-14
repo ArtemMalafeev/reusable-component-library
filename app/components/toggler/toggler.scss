@@ -1,0 +1,88 @@
+/* Toggler */
+
+.toggler {
+    position: relative;
+    display: inline-block;
+}
+
+/* Input */
+
+.toggler__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Control */
+
+.toggler__control {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+
+        display: block;
+
+        box-sizing: border-box;
+        width: 52px;
+        height: 27px;
+    
+        background-color: transparent;
+        border: 1px solid $grey-2;
+        border-radius: 16px;
+
+        transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        left: 2px;
+    
+        width: 24px;
+        height: 24px;
+    
+        background-color: $grey-2;
+        border-radius: 16px;
+
+        transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+}
+
+/* States */
+
+.toggler__input:checked + .toggler__control::before {
+    background-color: $blue;
+    border-color: $blue;
+}
+
+.toggler__input:checked + .toggler__control::after {
+    transform: translateX(calc(100%));
+    background-color: $white;
+}
+
+.toggler__input:focus + .toggler__control {
+    text-decoration: underline;
+}
+
+.toggler__input:focus-visible + .toggler__control::before {
+    border-color: $text-color-hover;
+}
+
+.toggler__input:disabled + .toggler__control {
+    pointer-events: none;
+    cursor: default;
+    color: $grey-2;
+}
+
+.toggler__input:disabled + .toggler__control::after {
+    opacity: 0.75;
+    background-color: $grey-3;
+}
+
+.toggler__input:disabled + .toggler__control::before {
+    background-color: $grey-2;
+}

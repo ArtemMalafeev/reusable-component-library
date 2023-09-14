@@ -1,13 +1,12 @@
-/* ACCORDION */
-
-
-/* Base */
+/* Accordion */
 
 .accordion {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
 }
+
+/* Item */
 
 .accordion__item {
     padding: 24px 32px;
@@ -20,6 +19,8 @@
     border-radius: 8px;
 }
 
+/* Summary */
+
 .accordion__summary {
     cursor: pointer;
 
@@ -29,9 +30,13 @@
     justify-content: space-between;
 }
 
+/* Title */
+
 .accordion__title {
     color: $black;
 }
+
+/* Logo */
 
 .accordion__logo {
     display: block;
@@ -43,13 +48,19 @@
     transition: transform .5s ease;
 }
 
+/* Text */
+
 .accordion__text {
     margin: 0;
 }
 
+/* Logo */
+
 .accordion__item[open] .accordion__logo {
     transform: rotate(180deg);
 }
+
+/* Content */
 
 .accordion__content {
     margin-top: 16px;

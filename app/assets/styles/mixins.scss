@@ -1,0 +1,41 @@
+@mixin reset-button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+@mixin link {
+    position: relative;
+
+    padding-bottom: 4px;
+
+    color: $black;
+    text-decoration: none;
+
+    outline: none;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(0);
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $black;
+
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &--active {
+        color: $active;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+        transform: scale(1);
+    }
+}

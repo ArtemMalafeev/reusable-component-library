@@ -4,6 +4,7 @@ import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import cssnano from 'cssnano';
+import terser from 'gulp-terser';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
@@ -25,6 +26,15 @@ export const fonts = () => {
     return gulp.src('app/assets/fonts/*.ttf')
         .pipe(ttf2woff2())
         .pipe(gulp.dest('public/assets/fonts'));
+};
+
+/* Scripts */
+
+const scripts = () => {
+    return gulp.src('app/assets/scripts/**/*.js')
+        .pipe(terser())
+        .pipe(rename('script.min.js'))
+        .pipe(gulp.dest('public/js'));
 };
 
 /* HTML */
@@ -83,6 +93,7 @@ export default gulp.series(
         styles,
         html,
         icons,
+        scripts,
         fonts,
         watching,
     ),
