@@ -59,6 +59,7 @@
     width: 100%;
 
     background-color: rgba($color: $black, $alpha: 20%);
+    backdrop-filter: blur(3px);
 
     transition: left .5s ease-in-out;
 
@@ -106,7 +107,7 @@
 
 /* List */
 
-.navigation__list {  
+.navigation__list {
     display: flex;
     flex-direction: column;
     row-gap: 16px;

@@ -28,7 +28,7 @@
         box-sizing: border-box;
         width: 52px;
         height: 27px;
-    
+
         background-color: transparent;
         border: 1px solid $grey-2;
         border-radius: 16px;
@@ -41,10 +41,10 @@
 
         position: absolute;
         left: 2px;
-    
+
         width: 24px;
         height: 24px;
-    
+
         background-color: $grey-2;
         border-radius: 16px;
 
@@ -54,35 +54,35 @@
 
 /* States */
 
-.toggler__input:checked + .toggler__control::before {
+.toggler__input:checked+.toggler__control::before {
     background-color: $blue;
     border-color: $blue;
 }
 
-.toggler__input:checked + .toggler__control::after {
+.toggler__input:checked+.toggler__control::after {
     transform: translateX(calc(100%));
     background-color: $white;
 }
 
-.toggler__input:focus + .toggler__control {
+.toggler__input:focus+.toggler__control {
     text-decoration: underline;
 }
 
-.toggler__input:focus-visible + .toggler__control::before {
+.toggler__input:focus-visible+.toggler__control::before {
     border-color: $text-color-hover;
 }
 
-.toggler__input:disabled + .toggler__control {
+.toggler__input:disabled+.toggler__control {
     pointer-events: none;
     cursor: default;
     color: $grey-2;
 }
 
-.toggler__input:disabled + .toggler__control::after {
+.toggler__input:disabled+.toggler__control::after {
     opacity: 0.75;
     background-color: $grey-3;
 }
 
-.toggler__input:disabled + .toggler__control::before {
+.toggler__input:disabled+.toggler__control::before {
     background-color: $grey-2;
 }

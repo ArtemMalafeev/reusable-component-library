@@ -1,6 +1,3 @@
-/* INDEX */
-
-
 /* Base */
 
 // @import 'normalize';
@@ -21,4 +18,19 @@
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
 }
