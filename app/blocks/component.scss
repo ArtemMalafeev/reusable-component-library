@@ -1,0 +1,74 @@
+/* Component */
+
+.component {
+    width: 100%;
+    height: 100%;
+}
+
+.component__preview {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 350px;
+}
+
+.component__title {
+    /* h4 */
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+    color: $black;
+
+    /* 130% */
+}
+
+.component__inner {
+    height: 100%;
+    padding-block: 15px;
+
+    @media screen and (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 56px;
+    }
+}
+
+.component__aside .aside__category {
+    padding-top: 35px;
+    border: 0;
+}
+
+.component__aside .aside__title {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 26px;
+    color: $black;
+}
+
+.component__aside .aside__list {
+    row-gap: 8px;
+}
+
+.component__aside {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.component__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    background-color: $background-color-second;
+    border-radius: 12px;
+}

@@ -13,6 +13,13 @@ import ttf2woff2 from 'gulp-ttf2woff2';
 
 const sass = gulpSass(dartSass);
 
+/* Images */
+
+export const images = () => {
+    return gulp.src('app/**/*.png')
+        .pipe(gulp.dest('public/assets/images'));
+};
+
 /* Icons */
 
 export const icons = () => {
@@ -45,6 +52,14 @@ export const html = () => {
         .pipe(rename('index.min.html'))
         .pipe(gulp.dest('public'))
         .pipe(browser.stream());
+};
+
+/* Pages */
+
+export const pages = () => {
+    return gulp.src('app/pages/*.html')
+        .pipe(htmlmin())
+        .pipe(gulp.dest('public/pages'))
 };
 
 /* Styles */
@@ -84,15 +99,31 @@ export const watching = () => {
 
     gulp.watch(['app/**/*.scss'], gulp.series(styles));
     gulp.watch(['app/**/*.js'], gulp.series(scripts));
+    gulp.watch(['app/pages/*.html'], gulp.series(pages));
     gulp.watch(['app/index.html'], html).on('change', browser.reload);
 };
 
+export const build = () => {
+    return gulp.series(clean,
+        images,
+        gulp.parallel(
+            styles,
+            html,
+            pages,
+            icons,
+            scripts,
+            fonts,
+        ),
+    );
+};
 
 export default gulp.series(
     clean,
+    images,
     gulp.parallel(
         styles,
         html,
+        pages,
         icons,
         scripts,
         fonts,

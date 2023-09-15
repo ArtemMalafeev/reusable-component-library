@@ -72,6 +72,7 @@
     @media screen and (min-width: $tablet-width) {
         position: static;
         width: initial;
+        background-color: transparent;
     }
 }
 
@@ -90,7 +91,7 @@
     @media screen and (min-width: $tablet-width) {
         max-width: initial;
         padding: 0;
-        background-color: $background-color-second;
+        background-color: transparent;
     }
 }
 

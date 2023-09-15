@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.min.css">
+    <title>Reusable components</title>
+</head>
+
+<body class="preload">
+    <div class="page page_component">
+        <header class="header header--component">
+            <nav class="navigation container">
+                <a class="navigation__logo" href="../index.min.html">
+                    <svg class="navigation__icon" width="110" height="32">
+                        <use href="../assets/images/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <button class="navigation__toggle" id="navigation-open" type="button" aria-label="Открыть меню.">
+                    <svg class="navigation__burger" width="24" height="24">
+                        <use href="../assets/images/icons.svg#burger"></use>
+                    </svg>
+                </button>
+                <div class="navigation__menu" id="navigation-menu">
+                    <div class="navigation__inner">
+                        <div class="navigation__top">
+                            <ul class="navigation__list">
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="">Components</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="">About</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="navigation__switcher">
+                                <svg class="navigation__switcher-icon navigation__switcher-light navigation__switcher-light--active"
+                                    class="" width="24" height="24">
+                                    <use href="../assets/images/icons.svg#light"></use>
+                                </svg>
+                                <label class="toggler">
+                                    <input class="toggler__input" type="checkbox" id="theme-changer">
+                                    <span class="toggler__control"></span>
+                                </label>
+                                <svg class="navigation__switcher-icon navigation__switcher-dark" width="24" height="24">
+                                    <use href="../assets/images/icons.svg#dark"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="navigation__aside aside">
+                            <div class="aside__category">
+                                <h3 class="aside__title">Atoms</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Avatar
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Tooltip
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link aside__link--active" href="../pages/calendar.html">
+                                            Radio
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Toggler
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Checkbox
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Button
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside__category">
+                                <h3 class="aside__title">Molecules</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Calendar
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Skeleton
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Radio
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Input
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside__category">
+                                <h3 class="aside__title">Organisms</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Modal
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Histogram
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Accordion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page__main">
+            <section class="component">
+                <div class="container">
+                    <div class="component__inner">
+                        <div class="component__aside aside aside--main">
+                            <div class="aside__category">
+                                <h3 class="aside__title">Atoms</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Avatar
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Tooltip
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link aside__link--active" href="../pages/calendar.html">
+                                            Radio
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Toggler
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Checkbox
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Button
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside__category">
+                                <h3 class="aside__title">Molecules</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Calendar
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Skeleton
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Radio
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Input
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside__category">
+                                <h3 class="aside__title">Organisms</h3>
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Modal
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Histogram
+                                        </a>
+                                    </li>
+                                    <li class="aside__item">
+                                        <a class="aside__link" href="../pages/calendar.html">
+                                            Accordion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="component__content">
+                            <h1 class="component__title">Skeleton</h1>
+                            <div class="component__preview">
+                                <div class="skeleton">
+                                    <div class="skeleton__top">
+                                        <div class="skeleton__logo">
+                                        </div>
+                                        <div class="skeleton__description">
+                                            <div class="skeleton__line skeleton__line--s"></div>
+                                            <div class="skeleton__line skeleton__line--m"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__bottom">
+                                        <div class="skeleton__line"></div>
+                                        <div class="skeleton__line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs" role="tab">
+                                <input class="tabs__radio tabs__radio--css" type="radio" id="all-tab" name="tab"
+                                    checked>
+                                <input class="tabs__radio tabs__radio--html" type="radio" id="atoms-tab" name="tab">
+                                <div class="tabs__menu">
+                                    <div class="container">
+                                        <ul class="tabs__items">
+                                            <li class="tabs__item">
+                                                <label class="tabs__label tabs__label--css" for="all-tab">
+                                                    Html
+                                                </label>
+                                            </li>
+                                            <li class="tabs__item">
+                                                <label class="tabs__label tabs__label--html" for="atoms-tab">
+                                                    Css
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tabs__content tabs__content--css">
+                                    <pre>
+                                        <code>                             
+&lt;div id="modal-window" class="modal"&gt;
+&lt;div class="modal__window"&gt;
+&lt;a href="#" title="Close" class="modal__close"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" class="svg-icon" fill="currentColor"&gt;
+  &lt;use xlink:href="#cross"&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;div class="modal__body"&gt;
+&lt;div class="form-group w-100"&gt;
+  &lt;label class="form-group__label" for="input4"&gt;Name&lt;/label&gt;
+  &lt;div class="form-group__input"&gt;
+    &lt;input type="text"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group w-100"&gt;
+  &lt;label class="form-group__label" for="input5"&gt;Email&lt;/label&gt;
+    &lt;div class="form-group__input"&gt;
+    &lt;input type="email"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;button type="submit" class="button -primary mt-md w-50"&gt;Submit&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+                                    </pre>
+                                </div>
+                                <div class="tabs__content tabs__content--html">CSS</div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <footer class="page__footer footer footer--component">
+            <div class="container">
+                <p class="footer__content">
+                    Reusable component library
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.min.js"></script>
+</body>
+
+</html>

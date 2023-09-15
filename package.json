@@ -27,5 +27,9 @@
     "stylelint-config-standard-scss": "^11.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.1.0"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "gulp-concat": "^2.6.1"
   }
 }
