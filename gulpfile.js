@@ -103,19 +103,18 @@ export const watching = () => {
     gulp.watch(['app/index.html'], html).on('change', browser.reload);
 };
 
-export const build = () => {
-    return gulp.series(clean,
-        images,
-        gulp.parallel(
-            styles,
-            html,
-            pages,
-            icons,
-            scripts,
-            fonts,
-        ),
-    );
-};
+export const build = gulp.series(
+    clean,
+    images,
+    gulp.parallel(
+        styles,
+        html,
+        pages,
+        icons,
+        scripts,
+        fonts,
+    ),
+);
 
 export default gulp.series(
     clean,
