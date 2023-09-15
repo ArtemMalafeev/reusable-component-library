@@ -1,0 +1,83 @@
+/* Radio */
+
+.radio {
+    position: relative;
+    display: inline-block;
+    font: 400 16px/24px $main-font;
+    color: $black;
+}
+
+/* Input */
+
+.radio__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* State */
+
+.radio__state {
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Control */
+
+.radio__control {
+    position: relative;
+
+    width: 28px;
+    height: 28px;
+
+    background-color: transparent;
+    border: 1px solid $grey-2;
+    border-radius: 14px;
+
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        inset: 0;
+
+        display: none;
+
+        background-color: $primary;
+        border-radius: 50%;
+    }
+}
+
+.radio__input:checked~.radio__state .radio__control {
+    border-color: $primary;
+}
+
+.radio__input:checked~.radio__state .radio__control::before {
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-48%, -48%);
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.radio__input:disabled~.radio__state .radio__control::before {
+    display: block;
+    background-color: $grey-2;
+}
+
+.radio__input:disabled~.radio__state .radio__label {
+    color: $grey-2;
+}
+
+.radio__input:disabled~.radio__state {
+    pointer-events: none;
+}
+
+.radio__input:focus-visible~.radio__state .radio__label {
+    text-decoration: underline;
+}

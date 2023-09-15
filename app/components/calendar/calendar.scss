@@ -1,0 +1,66 @@
+/* Calendar */
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    width: 100%;
+    height: auto;
+    padding: 16px;
+
+    font: 400 16px/20px $main-font;
+    color: $dark-blue;
+
+    border: 1px solid $grey-3;
+    border-radius: 8px;
+}
+
+/* Wrapper */
+
+.calendar__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+/* Inner */
+
+.calendar__inner {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(7, 1fr);
+}
+
+/* Title */
+
+.calendar__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Cell */
+
+.calendar__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $second-font;
+
+    &--active {
+        color: $white;
+        background-color: $primary;
+    }
+
+    &--interval {
+        color: $dark-blue;
+        background-color: rgb(160 177 245 / 20%);
+    }
+
+    &--day {
+        font-size: 14px;
+        color: $grey-3;
+    }
+}

@@ -31,7 +31,7 @@ export const fonts = () => {
 /* Scripts */
 
 const scripts = () => {
-    return gulp.src('app/assets/scripts/**/*.js')
+    return gulp.src('app/**/*.js')
         .pipe(terser())
         .pipe(rename('script.min.js'))
         .pipe(gulp.dest('public/js'));
@@ -83,6 +83,7 @@ export const watching = () => {
     });
 
     gulp.watch(['app/**/*.scss'], gulp.series(styles));
+    gulp.watch(['app/**/*.js'], gulp.series(scripts));
     gulp.watch(['app/index.html'], html).on('change', browser.reload);
 };
 

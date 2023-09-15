@@ -320,19 +320,213 @@
                                             <button class="button button--secondary" type="button" tabindex="-1">
                                                 Secondary
                                             </button>
-                                            <button class="button button--secondary" type="button" tabindex="-1" disabled>
+                                            <button class="button button--secondary" type="button" tabindex="-1"
+                                                disabled>
                                                 Secondary
                                             </button>
                                             <button class="button button--alternate" type="button" tabindex="-1">
                                                 Alternate
                                             </button>
-                                            <button class="button button--alternate" type="button" tabindex="-1" disabled>
+                                            <button class="button button--alternate" type="button" tabindex="-1"
+                                                disabled>
                                                 Alternate
                                             </button>
                                         </div>
                                     </div>
                                     <div class="cards__body">
                                         <h3 class="cards__title">Button</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="tooltip">
+                                            <div class="tooltip__icon">
+                                                <svg class="tooltip__question" width="24" height="24">
+                                                    <use xlink:href="../../assets/images/icons.svg#tooltip"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__bubble">
+                                                Helper Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Tooltip</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <button class="button button--primary" type="button" id="modal-open" tabindex="-1">
+                                            Open modal
+                                        </button>
+                                        <div class="modal" id="modal">
+                                            <div class="modal__inner">
+                                                <button class="modal__close" id="modal-close" tabindex="-1"
+                                                    aria-label="Закрыть модальное окно.">
+                                                    <svg class="modal__cross" viewBox="0 0 16 16">
+                                                        <use xlink:href="../../assets/images/icons.svg#cross"></use>
+                                                    </svg>
+                                                </button>
+                                                <h2 class="modal__title">Modal title</h2>
+                                                <div class="modal__description">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                                    sint. Velit officia consequat duis enim
+                                                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                                    sint. Velit officia consequat duis enim
+                                                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Modal</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <label class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" tabindex="-1">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13">
+                                                            <use xlink:href="assets/images/icons.svg#check" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__label">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" tabindex="-1" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13">
+                                                            <use xlink:href="assets/images/icons.svg#check" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__label">Checked</div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" tabindex="-1" disabled>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13">
+                                                            <use xlink:href="assets/images/icons.svg#check" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__label">Disabled</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Checkbox</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <label class="radio">
+                                                <input class="radio__input" name="test" type="radio">
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__inner"></div>
+                                                    </div>
+                                                    <div class="radio__label">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input class="radio__input" name="test" type="radio" checked>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__inner"></div>
+                                                    </div>
+                                                    <div class="radio__label">Checked</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input class="radio__input" name="test" type="radio" disabled>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__inner"></div>
+                                                    </div>
+                                                    <div class="radio__label">Disabled</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Radio</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="calendar">
+                                            <h3 class="calendar__title">October 2019</h3>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__cell calendar__cell--day">Mon</div>
+                                                    <div class="calendar__cell calendar__cell--day">Tue</div>
+                                                    <div class="calendar__cell calendar__cell--day">Wed</div>
+                                                    <div class="calendar__cell calendar__cell--day">Thu</div>
+                                                    <div class="calendar__cell calendar__cell--day">Fri</div>
+                                                    <div class="calendar__cell calendar__cell--day">Sat</div>
+                                                    <div class="calendar__cell calendar__cell--day">Sun</div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell">1</div>
+                                                    <div class="calendar__cell">2</div>
+                                                    <div class="calendar__cell">3</div>
+                                                    <div class="calendar__cell">4</div>
+                                                    <div class="calendar__cell">5</div>
+                                                    <div class="calendar__cell">6</div>
+                                                    <div class="calendar__cell">7</div>
+                                                    <div class="calendar__cell">8</div>
+                                                    <div class="calendar__cell">9</div>
+                                                    <div class="calendar__cell">10</div>
+                                                    <div class="calendar__cell">11</div>
+                                                    <div class="calendar__cell">12</div>
+                                                    <div class="calendar__cell">13</div>
+                                                    <div class="calendar__cell">14</div>
+                                                    <div class="calendar__cell">15</div>
+                                                    <div class="calendar__cell">16</div>
+                                                    <div class="calendar__cell">17</div>
+                                                    <div class="calendar__cell calendar__cell--active">18</div>
+                                                    <div class="calendar__cell calendar__cell--interval">19</div>
+                                                    <div class="calendar__cell calendar__cell--interval">20</div>
+                                                    <div class="calendar__cell calendar__cell--interval">21</div>
+                                                    <div class="calendar__cell calendar__cell--interval">22</div>
+                                                    <div class="calendar__cell calendar__cell--active">23</div>
+                                                    <div class="calendar__cell">24</div>
+                                                    <div class="calendar__cell">25</div>
+                                                    <div class="calendar__cell">26</div>
+                                                    <div class="calendar__cell">27</div>
+                                                    <div class="calendar__cell">28</div>
+                                                    <div class="calendar__cell">29</div>
+                                                    <div class="calendar__cell">30</div>
+                                                    <div class="calendar__cell">31</div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                    <div class="calendar__cell"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Calendar</h3>
                                         <p class="cards__category">Organism</p>
                                     </div>
                                 </div>
@@ -358,6 +552,10 @@
     </footer>
 
     <script src="js/script.min.js"></script>
+</body>
+
+<body>
+
 </body>
 
 </html>
