@@ -358,7 +358,8 @@
                                 </div>
                                 <div class="cards__card" href="pages/calendar.html">
                                     <div class="cards__component">
-                                        <button class="button button--primary" type="button" id="modal-open" tabindex="-1">
+                                        <button class="button button--primary" type="button" id="modal-open"
+                                            tabindex="-1">
                                             Open modal
                                         </button>
                                         <div class="modal" id="modal">
@@ -433,36 +434,87 @@
                                     <div class="cards__component">
                                         <div class="cards__flex">
                                             <label class="radio">
-                                                <input class="radio__input" name="test" type="radio">
-                                                <div class="radio__state">
-                                                    <div class="radio__control">
-                                                        <div class="radio__inner"></div>
-                                                    </div>
-                                                    <div class="radio__label">Default</div>
-                                                </div>
+                                                <input class="radio__input" name="test" type="radio" tabindex="-1">
+                                                <span class="radio__control"></span>
+                                                <span class="radio__text">Default</span>
                                             </label>
                                             <label class="radio">
-                                                <input class="radio__input" name="test" type="radio" checked>
-                                                <div class="radio__state">
-                                                    <div class="radio__control">
-                                                        <div class="radio__inner"></div>
-                                                    </div>
-                                                    <div class="radio__label">Checked</div>
-                                                </div>
+                                                <input class="radio__input" name="test" type="radio" tabindex="-1"
+                                                    checked>
+                                                <span class="radio__control"></span>
+                                                <span class="radio__text">Checked</span>
                                             </label>
                                             <label class="radio">
-                                                <input class="radio__input" name="test" type="radio" disabled>
-                                                <div class="radio__state">
-                                                    <div class="radio__control">
-                                                        <div class="radio__inner"></div>
-                                                    </div>
-                                                    <div class="radio__label">Disabled</div>
-                                                </div>
+                                                <input class="radio__input" name="test" type="radio" tabindex="-1"
+                                                    disabled>
+                                                <span class="radio__control"></span>
+                                                <span class="radio__text">Disabled</span>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="cards__body">
                                         <h3 class="cards__title">Radio</h3>
+                                        <p class="cards__category">Organism</p>
+                                    </div>
+                                </div>
+                                <div class="cards__card" href="pages/calendar.html">
+                                    <div class="cards__component">
+                                        <div class="cards__flex">
+                                            <div class="input">
+                                                <label class="input__label" for="label">Success</label>
+                                                <div class="input__control input__control--success">
+                                                    <input class="input__field" id="label" type="text" tabindex="-1"
+                                                        placeholder="Artem">
+                                                    <div class="input__image input__image input__image--success">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#success" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="input__image input__image--error">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#error" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input">
+                                                <label class="input__label" for="label">Error</label>
+                                                <div class="input__control input__control--error">
+                                                    <input class="input__field" id="label" type="text" tabindex="-1"
+                                                        placeholder="Malafeev">
+                                                    <div class="input__image input__image input__image--success">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#success" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="input__image input__image--error">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#error" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input">
+                                                <label class="input__label" for="label">Default</label>
+                                                <div class="input__control input__control">
+                                                    <input class="input__field" id="label" type="text" tabindex="-1"
+                                                        placeholder="Placeholder">
+                                                    <div class="input__image input__image input__image--success">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#success" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="input__image input__image--error">
+                                                        <svg class="input__icon">
+                                                            <use xlink:href="assets/images/icons.svg#error" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cards__body">
+                                        <h3 class="cards__title">Input</h3>
                                         <p class="cards__category">Organism</p>
                                     </div>
                                 </div>

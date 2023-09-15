@@ -1,83 +1,80 @@
-/* Radio */
+// /* Radio */
 
 .radio {
     position: relative;
-    display: inline-block;
+
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+
     font: 400 16px/24px $main-font;
+
+    // line-height: 0;
     color: $black;
 }
 
-/* Input */
+// /* Input */
 
 .radio__input {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
 
-/* State */
-
-.radio__state {
-    cursor: pointer;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
 /* Control */
 
 .radio__control {
+    cursor: pointer;
     position: relative;
-
     width: 28px;
     height: 28px;
 
-    background-color: transparent;
-    border: 1px solid $grey-2;
-    border-radius: 14px;
-
-
-    &::before {
+    &::before,
+    &::after {
         content: '';
 
         position: absolute;
-        inset: 0;
+        z-index: 0;
+        top: 0;
+        left: 0;
 
-        display: none;
+        display: block;
 
-        background-color: $primary;
-        border-radius: 50%;
+        box-sizing: border-box;
+        width: 28px;
+        height: 28px;
+
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-radius: 0;
+        border-radius: 100%;
+    }
+
+    &::after {
+        transform: scale(0);
+        transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.8);
+    }
+
+    &::before {
+        border-color: $grey-2;
     }
 }
 
-.radio__input:checked~.radio__state .radio__control {
+/* States */
+
+.radio__input:checked ~ .radio__control::before {
     border-color: $primary;
 }
 
-.radio__input:checked~.radio__state .radio__control::before {
-    position: absolute;
-    left: 48%;
-    top: 48%;
-    transform: translate(-48%, -48%);
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
+.radio__input:checked ~ .radio__control::after {
+    transform: scale(0.6);
+    background-color: $primary;
 }
 
-.radio__input:disabled~.radio__state .radio__control::before {
-    display: block;
-    background-color: $grey-2;
-}
-
-.radio__input:disabled~.radio__state .radio__label {
-    color: $grey-2;
-}
-
-.radio__input:disabled~.radio__state {
+.radio__input:disabled ~ .radio__control {
     pointer-events: none;
 }
 
-.radio__input:focus-visible~.radio__state .radio__label {
-    text-decoration: underline;
+.radio__input:disabled ~ .radio__control::after {
+    transform: scale(0.6);
+    background-color: $grey-2;
 }
