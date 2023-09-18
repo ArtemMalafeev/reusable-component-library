@@ -3,3 +3,6 @@ install:
 
 build:
 	gulp build
+
+local:
+	gulp
