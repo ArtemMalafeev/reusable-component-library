@@ -9,6 +9,7 @@
     height: 100%;
     min-height: 185px;
     padding: 16px 24px;
+    color: var(--component-text-color);
 
     font: 16px/24px $main-font;
 
@@ -37,7 +38,7 @@
 .histogram__title {
     margin: 0;
     font: inherit;
-    color: $black;
+    color: $grey-3;
     opacity: 0.8;
 }
 

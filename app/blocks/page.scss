@@ -11,6 +11,10 @@
     line-height: 24px;
 
     background-color: $background-color-main;
+
+    &--hidden {
+        overflow: hidden;
+    }
 }
 
 /* Header */

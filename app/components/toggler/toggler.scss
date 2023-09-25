@@ -3,6 +3,7 @@
 .toggler {
     position: relative;
     display: inline-block;
+    color: var(--component-text-color);
 }
 
 /* Input */
@@ -67,7 +68,7 @@
     background-color: $white;
 }
 
-.toggler__input:focus+.toggler__control {
+.toggler__input:focus-visible+.toggler__control {
     text-decoration: underline;
 }
 

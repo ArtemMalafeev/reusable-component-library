@@ -1,9 +1,9 @@
 /* Header */
 
 .header {
-    background-color: $background-color-second;
+    background-color: var(--background-color-second);
 
     &--component {
-        background-color: transparent;
+        background-color: var(--background-color);
     }
 }

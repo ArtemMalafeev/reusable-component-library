@@ -225,49 +225,41 @@
                         </div>
                     </div>
                     <div class="component__content">
-                        <h1 class="component__title">Histogram</h1>
+                        <h1 class="component__title">Checkbox</h1>
                         <div class="component__preview">
-                            <div class="histogram">
-                                <div class="histogram__header">
-                                    <div class="histogram__information">
-                                        <h2 class="histogram__title">Total orders</h2>
-                                        <span class="histogram__total">50254</span>
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="24" height="24">
+                                            <use xlink:href="../assets/images/icons.svg#check" />
+                                        </svg>
                                     </div>
-                                    <a class="histogram__link" href="#">View all</a>
+                                    <div class="checkbox__label">Default</div>
                                 </div>
-                                <div class="histogram__chart">
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--m"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--l"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--m"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--l"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--l"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--m"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--l"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column histogram__column--m"></div>
-                                    <div class="histogram__column"></div>
-                                    <div class="histogram__column histogram__column--l"></div>
-                                    <div class="histogram__column histogram__column--s"></div>
-                                    <div class="histogram__column"></div>
+                            </label>
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox" checked>
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="24" height="24">
+                                            <use xlink:href="../assets/images/icons.svg#check" />
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox__label">Checked</div>
                                 </div>
-                            </div>
+                            </label>
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox" disabled>
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="24" height="24">
+                                            <use xlink:href="../assets/images/icons.svg#check" />
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox__label">Disabled</div>
+                                </div>
+                            </label>
                         </div>
                         <div class="tabs" role="tab">
                             <input class="tabs__radio tabs__radio--css" type="radio" id="all-tab" name="tab" checked>

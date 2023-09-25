@@ -9,8 +9,7 @@
 
     font: 400 16px/24px $main-font;
 
-    // line-height: 0;
-    color: $black;
+    color: var(--component-text-color);
 }
 
 // /* Input */
@@ -72,6 +71,10 @@
 
 .radio__input:disabled ~ .radio__control {
     pointer-events: none;
+}
+
+.radio__input:disabled ~ .radio__text {
+    color: $grey-2;
 }
 
 .radio__input:disabled ~ .radio__control::after {

@@ -13,7 +13,7 @@
 
     padding-bottom: 4px;
 
-    color: $black;
+    color: var(--aside-text-color);
     text-decoration: none;
 
     outline: none;
@@ -29,7 +29,7 @@
         width: 100%;
         height: 2px;
 
-        background-color: $black;
+        background-color: var(--aside-text-color);
 
         transition: transform 0.2s ease-in-out;
     }

@@ -8,7 +8,7 @@
     box-sizing: border-box;
 
     font-family: 400 16px/24px $main-font;
-    color: $black;
+    color: var(--component-text-color);
 }
 
 /* Input */

@@ -13,6 +13,30 @@
 
 @import '../../blocks/index';
 
+html {
+    --background-color: #{$grey-1};
+    --background-color-second: #{$white};
+    --text-color: #{$black};
+    --logo-color: #{$black};
+    --tabs-text-color: #{$grey-3};
+    --tabs-text-hover: #{$black};
+    --tabs-text-active: #{$black};
+    --aside-text-color: #{$black};
+    --component-text-color: #{$black};
+    --tooltip-color: #{$black};
+}
+
+html[black] {
+    --background-color: #{$grey-4};
+    --background-color-second: #{$black};
+    --text-color: #{$grey-3};
+    --logo-color: #{$white};
+    --tabs-text-hover: #{$white};
+    --tabs-text-active: #{$white};
+    --aside-text-color: #{$white};
+    --component-text-color: #{$white};
+    --tooltip-color: #{$white};
+}
 
 *,
 *::after,

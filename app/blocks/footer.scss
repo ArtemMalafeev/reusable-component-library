@@ -2,12 +2,12 @@
 
 .footer {
     padding-block: 16px;
-    color: $black;
+    color: var(--text-color);
     text-align: center;
-    background-color: $background-color-second;
+    background-color: var(--background-color-second);
 
     &--component {
-        background-color: transparent;
+        background-color: var(--background-color);
     }
 
     @media screen and (min-width: $tablet-width) {

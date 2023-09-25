@@ -2,7 +2,8 @@
 
 .tooltip {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 /* Icon */
@@ -23,7 +24,7 @@
 
 .tooltip__question {
     display: block;
-    fill: $black;
+    fill: var(--tooltip-color);
 }
 
 /* Bubble */
